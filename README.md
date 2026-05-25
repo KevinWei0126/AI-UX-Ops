@@ -1,2 +1,2 @@
 # AI-UX-Ops
-plus pay UX base knowledge
+plus pay UX base knowledge & prompt library
