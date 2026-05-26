@@ -1,11 +1,11 @@
 ---
-name: quanying-pay-ux
-description: 「全盈+PAY」產品的 UX 專屬知識庫。當使用者在進行全盈+PAY 相關的設計決策、查詢產品 persona、研究洞察、設計系統規範、產品脈絡、商業目標，或在做任何需要參考全盈+PAY 既有知識的設計工作時使用。也用於設計師查找參考資料、設計師＋PM 共同維護的活文件、新人 onboarding 教材、以及讓 Claude 引用既有 UX 知識做設計輔助決策的場景。本 skill 內含五個主題資料夾（personas、research-insights、design-system、product-context、business-goals）、三層防呆機制（INDEX.md 人工目錄、自動產生的檔案地圖、標籤搜尋指南），以及依資料夾分區的 changelog 版本紀錄。
+name: 全盈+PAY-UX knowledge base
+description: 「全盈+PAY」產品的 UX 專屬知識庫。當使用者在進行全盈+PAY 相關的設計決策、查詢產品 persona、研究洞察、設計系統規範、產品脈絡、商業目標，或在做任何需要參考全盈+PAY 既有知識的設計工作時使用。也用於設計師查找參考資料、設計師＋PM 共同維護的活文件、新人 onboarding 教材、以及讓 AI 引用既有 UX 知識做設計輔助決策的場景。本 skill 內含五個主題資料夾（personas、research-insights、design-system、product-context、business-goals）、三層防呆機制（INDEX.md 人工目錄、自動產生的檔案地圖、標籤搜尋指南），以及依資料夾分區的 changelog 版本紀錄。
 ---
 
 # 全盈+PAY UX Knowledge Base
 
-這是「全盈+PAY」產品的專屬 UX 知識庫 skill。它是一個**活文件系統**——設計師＋PM 共同維護、新人可以自學、Claude 可以引用做設計決策。
+這是「全盈+PAY」產品的專屬 UX 知識庫 skill。它是一個**活文件系統**——由設計團隊共同維護、提供新人自學、AI 可以引用做設計決策。
 
 ---
 
@@ -18,7 +18,7 @@ description: 「全盈+PAY」產品的 UX 專屬知識庫。當使用者在進�
 | 「我們的使用者是誰？」「目標族群？」 | `personas/` |
 | 「先前訪談發現什麼？」「之前研究結論？」 | `research-insights/` |
 | 「按鈕／顏色／元件規範？」「設計 token？」 | `design-system/` |
-| 「這個產品在做什麼？」「商業模式？」「核心流程？」 | `product-context/` |
+| 「這個產品在做什麼？」「商業模式？」「核心流程？」「過去的設計決策？」 | `product-context/` |
 | 「KPI？」「OKR？」「這次改版要解決的商業問題？」 | `business-goals/` |
 | 「這個 skill 裡有什麼？」「找不到對應檔案」 | 先讀 `_meta/INDEX.md` |
 
@@ -56,7 +56,7 @@ view personas/p001-小資族行動支付者.md
 ## 資料夾結構
 
 ```
-quanying-pay-ux/
+全盈+PAY-UX knowledge base/
 ├── SKILL.md                  ← 你現在讀的這份
 ├── _meta/                    ← 知識庫的後設資料
 │   ├── INDEX.md              ← 人工維護的總目錄（防呆 Layer 1）
@@ -94,7 +94,7 @@ quanying-pay-ux/
 
 ### Layer 1｜INDEX.md（人工維護的目錄）
 
-`_meta/INDEX.md` 是給人類看的索引，由設計師＋PM 手動維護。當你新增一個重要的 md 檔，就在 INDEX.md 加一行說明。它是「最權威但更新最慢」的入口。
+`_meta/INDEX.md` 是給人類看的索引，由設計師手動維護。當你新增一個重要的 md 檔，就在 INDEX.md 加一行說明。它是「最權威但更新最慢」的入口。
 
 **使用時機**：當你想找的東西有明確語意（例如「找小資族 persona」、「找去年的支付流程訪談」）。
 
@@ -194,9 +194,9 @@ related: [r2025-03-002, ds-button-primary]
 
 ---
 
-## Claude 引用知識庫時的硬性規則
+## AI 引用知識庫時的硬性規則
 
-當你（Claude）被要求依據本 skill 做設計建議時：
+當你（AI）被要求依據本 skill 做設計建議時：
 
 1. **不可以憑印象回答**——必須真的 view 過對應 md 檔才能引用
 2. **引用時要標註 id 與狀態**——例如「依據 p001（validated, 2025-05-20）」
@@ -209,7 +209,7 @@ related: [r2025-03-002, ds-button-primary]
 
 ## 快速啟動範例
 
-**情境一｜設計師問**：「我要設計支付失敗的錯誤頁面，有什麼可以參考的？」
+**情境一｜UI設計師問**：「我要設計支付失敗的錯誤頁面，有什麼可以參考的？」
 
 你應該：
 
@@ -219,7 +219,7 @@ related: [r2025-03-002, ds-button-primary]
 4. 每筆引用都標 id、狀態、最後更新日
 5. 若有 `deprecated` 資料，明確標註但仍列出（保留設計脈絡）
 
-**情境二｜PM 說**：「我剛訪談完三位新使用者，要把洞察加進來。」
+**情境二｜ UX研究員說**：「我剛訪談完三位新使用者，要把洞察加進來。」
 
 你應該：
 
