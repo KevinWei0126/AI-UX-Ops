@@ -1,5 +1,5 @@
 ---
-name: ai-ux-ops
+name: UX Research Navigation Assistant
 description: "協助產品設計師進行 UX 研究工作的 Research Navigation Assistant。當使用者要規劃使用者訪談、寫訪談腳本、分析逐字稿、做 affinity mapping、整理使用者洞察、撰寫研究報告、轉譯商業價值、規劃 usability testing、追蹤產品成效，或任何提到「UX 研究」「使用者研究」「訪談」「洞察」「Prompt 任務卡」的場景時使用。本 skill 提供 55 張涵蓋研究全流程的 Prompt 任務卡，以及一套非線性的任務判斷、輸入檢查、輸出品質檢查與 Next Best Actions 規則。"
 ---
 
