@@ -9,7 +9,7 @@
 
 ## [2025-05-25] - 設計團隊
 
-### Added
+### Added（這只是範例）
 - 建立知識庫初始結構：personas/、research-insights/、design-system/、product-context/、business-goals/
 - 建立 `_meta/` 後設資料區
 - 建立三層防呆機制：`INDEX.md`（人工目錄）、`file_map.md`（自動地圖）、`tags.md`（標籤系統）
