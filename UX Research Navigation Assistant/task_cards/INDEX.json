@@ -1,0 +1,1053 @@
+[
+  {
+    "prompt_id": "AI-A-001",
+    "task_name": "主題分群",
+    "stage": "資料分析與洞察",
+    "task_type": "synthesize",
+    "when_to_use": "當你已有逐字稿、研究資料，並需要將資料收斂、分群或整合成「主題分群表 / Topic Cluster」時",
+    "when_not_to_use": "當缺少Research Data、User Quote，或資料量不足以支撐「主題分群」判斷時",
+    "input_required": [
+      "Research Data",
+      "User Quote"
+    ],
+    "output": [
+      "主題分群表 / Topic Cluster"
+    ],
+    "next_best_actions": [
+      "AI-A-003｜重複議題合併",
+      "AI-A-005｜行為模式分組"
+    ],
+    "file": "task_cards/cards/AI-A-001.md"
+  },
+  {
+    "prompt_id": "AI-A-002",
+    "task_name": "Affinity Mapping",
+    "stage": "資料分析與洞察",
+    "task_type": "synthesize",
+    "when_to_use": "當你已有使用者資料，並需要將資料收斂、分群或整合成「Affinity Group」時",
+    "when_not_to_use": "當缺少使用者資料，或資料量不足以支撐「Affinity Mapping」判斷時",
+    "input_required": [
+      "使用者資料"
+    ],
+    "output": [
+      "Affinity Group"
+    ],
+    "next_best_actions": [
+      "DO-A-001｜關鍵發現摘要生成",
+      "回到使用者原話｜補強洞察證據"
+    ],
+    "file": "task_cards/cards/AI-A-002.md"
+  },
+  {
+    "prompt_id": "AI-A-003",
+    "task_name": "重複議題合併",
+    "stage": "資料分析與洞察",
+    "task_type": "refine",
+    "when_to_use": "當你已有多份研究資料，並需要將資料收斂、分群或整合成「合併後主題清單」時",
+    "when_not_to_use": "當缺少Research Data、User Quote，或資料量不足以支撐「重複議題合併」判斷時",
+    "input_required": [
+      "Research Data",
+      "User Quote"
+    ],
+    "output": [
+      "合併後主題清單"
+    ],
+    "next_best_actions": [
+      "AI-A-005｜行為模式分組",
+      "DO-A-001｜關鍵發現摘要生成"
+    ],
+    "file": "task_cards/cards/AI-A-003.md"
+  },
+  {
+    "prompt_id": "AI-A-005",
+    "task_name": "行為模式分組",
+    "stage": "資料分析與洞察",
+    "task_type": "analyze",
+    "when_to_use": "當你已有行為資料，並需要將資料收斂、分群或整合成「使用者行為模式分組」時",
+    "when_not_to_use": "當缺少Behavior Data、Flow Description、Interview Summary，或資料量不足以支撐「行為模式分組」判斷時",
+    "input_required": [
+      "Behavior Data",
+      "Flow Description",
+      "Interview Summary"
+    ],
+    "output": [
+      "使用者行為模式分組"
+    ],
+    "next_best_actions": [
+      "DO-A-001｜關鍵發現摘要生成",
+      "DO-B-001｜User Flow 生成",
+      "DO-B-003｜Persona 文件化"
+    ],
+    "file": "task_cards/cards/AI-A-005.md"
+  },
+  {
+    "prompt_id": "DC-A-001",
+    "task_name": "延伸追問生成",
+    "stage": "資料蒐集與執行",
+    "task_type": "probe",
+    "when_to_use": "當你已有訪談內容、逐字稿或使用者回覆，並需要進行「延伸追問生成」以支援後續分析時",
+    "when_not_to_use": "當缺少Transcript、Interview Question、Research Goal，或資料量不足以支撐「延伸追問生成」判斷時",
+    "input_required": [
+      "Transcript",
+      "Interview Question",
+      "Research Goal"
+    ],
+    "output": [
+      "延伸追問清單"
+    ],
+    "next_best_actions": [
+      "DC-A-002｜深入探詢問題建議",
+      "DC-A-003｜對話摘要整理"
+    ],
+    "file": "task_cards/cards/DC-A-001.md"
+  },
+  {
+    "prompt_id": "DC-A-002",
+    "task_name": "深入探詢問題建議",
+    "stage": "資料蒐集與執行",
+    "task_type": "probe",
+    "when_to_use": "當你已有訪談內容、逐字稿或使用者回覆，並需要進行「深入探詢問題建議」以支援後續分析時",
+    "when_not_to_use": "當缺少Research Goal、Transcript，或資料量不足以支撐「深入探詢問題建議」判斷時",
+    "input_required": [
+      "Research Goal",
+      "Transcript"
+    ],
+    "output": [
+      "深入探詢問題"
+    ],
+    "next_best_actions": [
+      "DC-A-003｜對話摘要整理"
+    ],
+    "file": "task_cards/cards/DC-A-002.md"
+  },
+  {
+    "prompt_id": "DC-A-003",
+    "task_name": "對話摘要整理",
+    "stage": "資料蒐集與執行",
+    "task_type": "summarize",
+    "when_to_use": "當你已有訪談內容、逐字稿或使用者回覆，並需要進行「對話摘要整理」以支援後續分析時",
+    "when_not_to_use": "當缺少Transcript、Participant Background，或資料量不足以支撐「對話摘要整理」判斷時",
+    "input_required": [
+      "Transcript",
+      "Participant Background"
+    ],
+    "output": [
+      "訪談摘要報告"
+    ],
+    "next_best_actions": [
+      "AI-A-001｜主題分群"
+    ],
+    "file": "task_cards/cards/DC-A-003.md"
+  },
+  {
+    "prompt_id": "DC-B-001",
+    "task_name": "行為紀錄整理",
+    "stage": "資料蒐集與執行",
+    "task_type": "capture",
+    "when_to_use": "當你已有測試觀察、操作紀錄或任務資料，並需要整理成「行為流程整理」時",
+    "when_not_to_use": "當缺少操作觀察資料，或資料量不足以支撐「行為紀錄整理」判斷時",
+    "input_required": [
+      "操作觀察資料"
+    ],
+    "output": [
+      "行為流程整理"
+    ],
+    "next_best_actions": [
+      "回到逐字稿 / 觀察紀錄補充證據｜提升後續分析品質"
+    ],
+    "file": "task_cards/cards/DC-B-001.md"
+  },
+  {
+    "prompt_id": "DC-B-002",
+    "task_name": "情緒標記",
+    "stage": "資料蒐集與執行",
+    "task_type": "capture",
+    "when_to_use": "當你已有測試觀察、操作紀錄或任務資料，並需要整理成「情緒時間軸」時",
+    "when_not_to_use": "當缺少測試觀察資料，或資料量不足以支撐「情緒標記」判斷時",
+    "input_required": [
+      "測試觀察資料"
+    ],
+    "output": [
+      "情緒時間軸"
+    ],
+    "next_best_actions": [
+      "回到逐字稿 / 觀察紀錄補充證據｜提升後續分析品質"
+    ],
+    "file": "task_cards/cards/DC-B-002.md"
+  },
+  {
+    "prompt_id": "DC-B-003",
+    "task_name": "任務完成紀錄",
+    "stage": "資料蒐集與執行",
+    "task_type": "capture",
+    "when_to_use": "當你已有測試觀察、操作紀錄或任務資料，並需要整理成「任務完成報告」時",
+    "when_not_to_use": "當缺少測試結果，或資料量不足以支撐「任務完成紀錄」判斷時",
+    "input_required": [
+      "測試結果"
+    ],
+    "output": [
+      "任務完成報告"
+    ],
+    "next_best_actions": [
+      "回到逐字稿 / 觀察紀錄補充證據｜提升後續分析品質"
+    ],
+    "file": "task_cards/cards/DC-B-003.md"
+  },
+  {
+    "prompt_id": "DO-A-001",
+    "task_name": "關鍵發現摘要生成",
+    "stage": "產出物製作",
+    "task_type": "report",
+    "when_to_use": "當你已有研究洞察或分析結果，並需要整理成可溝通的報告內容或故事化摘要時",
+    "when_not_to_use": "當缺少Insight Data、User Quote或任務目標不是「關鍵發現摘要生成」時",
+    "input_required": [
+      "Insight Data",
+      "User Quote"
+    ],
+    "output": [
+      "關鍵發現摘要"
+    ],
+    "next_best_actions": [
+      "DO-B-001｜User Flow 生成",
+      "DO-B-002｜Journey Map 草稿生成",
+      "DO-B-003｜Persona 文件化",
+      "DO-C-002｜商業價值轉譯"
+    ],
+    "file": "task_cards/cards/DO-A-001.md"
+  },
+  {
+    "prompt_id": "DO-A-002",
+    "task_name": "簡報架構生成",
+    "stage": "產出物製作",
+    "task_type": "report",
+    "when_to_use": "當你已有研究洞察或分析結果，並需要整理成可溝通的報告內容或故事化摘要時",
+    "when_not_to_use": "當缺少洞察資料或任務目標不是「簡報架構生成」時",
+    "input_required": [
+      "洞察資料"
+    ],
+    "output": [
+      "Slide Outline"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認溝通對象與輸出目的是否正確"
+    ],
+    "file": "task_cards/cards/DO-A-002.md"
+  },
+  {
+    "prompt_id": "DO-A-003",
+    "task_name": "洞察故事化表達",
+    "stage": "產出物製作",
+    "task_type": "report",
+    "when_to_use": "當你已有研究洞察或分析結果，並需要整理成可溝通的報告內容或故事化摘要時",
+    "when_not_to_use": "當缺少使用者洞察或任務目標不是「洞察故事化表達」時",
+    "input_required": [
+      "使用者洞察"
+    ],
+    "output": [
+      "User Narrative"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認溝通對象與輸出目的是否正確"
+    ],
+    "file": "task_cards/cards/DO-A-003.md"
+  },
+  {
+    "prompt_id": "DO-B-001",
+    "task_name": "User Flow 生成",
+    "stage": "產出物製作",
+    "task_type": "produce",
+    "when_to_use": "當你已有研究洞察、流程資料或設計方案，並需要具象化為「使用者操作流程 / User Flow」時",
+    "when_not_to_use": "當缺少Flow And Research Data、Usage Scenario、User Behavior或任務目標不是「User Flow 生成」時",
+    "input_required": [
+      "Flow And Research Data",
+      "Usage Scenario",
+      "User Behavior"
+    ],
+    "output": [
+      "使用者操作流程 / User Flow"
+    ],
+    "next_best_actions": [
+      "DO-B-002｜Journey Map 草稿生成",
+      "DO-B-005｜設計決策說明生成"
+    ],
+    "file": "task_cards/cards/DO-B-001.md"
+  },
+  {
+    "prompt_id": "DO-B-002",
+    "task_name": "Journey Map 草稿生成",
+    "stage": "產出物製作",
+    "task_type": "produce",
+    "when_to_use": "當你已有研究洞察、流程資料或設計方案，並需要具象化為「Journey Map 草稿」時",
+    "when_not_to_use": "當缺少Emotion And Behavior Data、User Flow、User Feedback或任務目標不是「Journey Map 草稿生成」時",
+    "input_required": [
+      "Emotion And Behavior Data",
+      "User Flow",
+      "User Feedback"
+    ],
+    "output": [
+      "Journey Map 草稿"
+    ],
+    "next_best_actions": [
+      "DO-B-005｜設計決策說明生成",
+      "DO-C-002｜商業價值轉譯"
+    ],
+    "file": "task_cards/cards/DO-B-002.md"
+  },
+  {
+    "prompt_id": "DO-B-003",
+    "task_name": "Persona 文件化",
+    "stage": "產出物製作",
+    "task_type": "produce",
+    "when_to_use": "當你已有研究洞察、流程資料或設計方案，並需要具象化為「Persona 文件草稿」時",
+    "when_not_to_use": "當缺少Segmentation And Insight、User Needs、Behavior Pattern或任務目標不是「Persona 文件化」時",
+    "input_required": [
+      "Segmentation And Insight",
+      "User Needs",
+      "Behavior Pattern"
+    ],
+    "output": [
+      "Persona 文件草稿"
+    ],
+    "next_best_actions": [
+      "DO-B-005｜設計決策說明生成",
+      "DO-C-003｜簡報講稿生成"
+    ],
+    "file": "task_cards/cards/DO-B-003.md"
+  },
+  {
+    "prompt_id": "DO-B-004",
+    "task_name": "UX 規格文件生成",
+    "stage": "產出物製作",
+    "task_type": "produce",
+    "when_to_use": "當你已有研究洞察、流程資料或設計方案，並需要具象化為「UX Spec」時",
+    "when_not_to_use": "當缺少功能與研究資料或任務目標不是「UX 規格文件生成」時",
+    "input_required": [
+      "功能與研究資料"
+    ],
+    "output": [
+      "UX Spec"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認溝通對象與輸出目的是否正確"
+    ],
+    "file": "task_cards/cards/DO-B-004.md"
+  },
+  {
+    "prompt_id": "DO-B-005",
+    "task_name": "設計決策說明生成",
+    "stage": "產出物製作",
+    "task_type": "produce",
+    "when_to_use": "當你已有研究洞察、流程資料或設計方案，並需要具象化為「設計決策說明」時",
+    "when_not_to_use": "當缺少Design Proposal、Research Insight或任務目標不是「設計決策說明生成」時",
+    "input_required": [
+      "Design Proposal",
+      "Research Insight"
+    ],
+    "output": [
+      "設計決策說明"
+    ],
+    "next_best_actions": [
+      "DO-C-002｜商業價值轉譯",
+      "DO-C-006｜利害關係人問題預測"
+    ],
+    "file": "task_cards/cards/DO-B-005.md"
+  },
+  {
+    "prompt_id": "DO-C-001",
+    "task_name": "KPI 解釋與對齊",
+    "stage": "產出物製作",
+    "task_type": "translate",
+    "when_to_use": "當你需要把 UX 研究結果轉譯給主管、PM、工程、營運或其他利害關係人時",
+    "when_not_to_use": "當缺少UX 改動、年度目標、KPI，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "UX 改動",
+      "年度目標",
+      "KPI"
+    ],
+    "output": [
+      "KPI Alignment"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認溝通對象與輸出目的是否正確"
+    ],
+    "file": "task_cards/cards/DO-C-001.md"
+  },
+  {
+    "prompt_id": "DO-C-002",
+    "task_name": "商業價值轉譯",
+    "stage": "產出物製作",
+    "task_type": "translate",
+    "when_to_use": "當你需要把 UX 研究結果轉譯給主管、PM、工程、營運或其他利害關係人時",
+    "when_not_to_use": "當缺少UX Insight、Research Result、Product Goal，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "UX Insight",
+      "Research Result",
+      "Product Goal"
+    ],
+    "output": [
+      "商業價值摘要"
+    ],
+    "next_best_actions": [
+      "DO-C-006｜利害關係人問題預測",
+      "DO-C-003｜簡報講稿生成"
+    ],
+    "file": "task_cards/cards/DO-C-002.md"
+  },
+  {
+    "prompt_id": "DO-C-003",
+    "task_name": "簡報講稿生成",
+    "stage": "產出物製作",
+    "task_type": "communicate",
+    "when_to_use": "當你需要把 UX 研究結果轉譯給主管、PM、工程、營運或其他利害關係人時",
+    "when_not_to_use": "當缺少Research Outcome、Business Context、Insight Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "Research Outcome",
+      "Business Context",
+      "Insight Data",
+      "Recommendation"
+    ],
+    "output": [
+      "跨部門簡報講稿"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認溝通對象與輸出目的是否正確"
+    ],
+    "file": "task_cards/cards/DO-C-003.md"
+  },
+  {
+    "prompt_id": "DO-C-006",
+    "task_name": "利害關係人問題預測",
+    "stage": "產出物製作",
+    "task_type": "communicate",
+    "when_to_use": "當你需要把 UX 研究結果轉譯給主管、PM、工程、營運或其他利害關係人時",
+    "when_not_to_use": "當缺少Proposal Content、Research Result，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "Proposal Content",
+      "Research Result"
+    ],
+    "output": [
+      "利害關係人 QA / Objection List"
+    ],
+    "next_best_actions": [
+      "DO-C-003｜簡報講稿生成"
+    ],
+    "file": "task_cards/cards/DO-C-006.md"
+  },
+  {
+    "prompt_id": "IT-A-001",
+    "task_name": "啟發式評估",
+    "stage": "迭代測試",
+    "task_type": "validate",
+    "when_to_use": "當你已有設計稿、Prototype 或流程，並需要做設計品質、可用性或一致性檢查時",
+    "when_not_to_use": "當缺少設計稿、Prototype、測試資料或明確任務目標時",
+    "input_required": [
+      "Prototype"
+    ],
+    "output": [
+      "Heuristic Report"
+    ],
+    "next_best_actions": [
+      "整理測試結果｜決定是否進入成效追蹤或設計修正"
+    ],
+    "file": "task_cards/cards/IT-A-001.md"
+  },
+  {
+    "prompt_id": "IT-A-002",
+    "task_name": "認知走查",
+    "stage": "迭代測試",
+    "task_type": "validate",
+    "when_to_use": "當你已有設計稿、Prototype 或流程，並需要做設計品質、可用性或一致性檢查時",
+    "when_not_to_use": "當缺少設計稿、Prototype、測試資料或明確任務目標時",
+    "input_required": [
+      "流程資料"
+    ],
+    "output": [
+      "Walkthrough Analysis"
+    ],
+    "next_best_actions": [
+      "整理測試結果｜決定是否進入成效追蹤或設計修正"
+    ],
+    "file": "task_cards/cards/IT-A-002.md"
+  },
+  {
+    "prompt_id": "IT-A-003",
+    "task_name": "Design QA",
+    "stage": "迭代測試",
+    "task_type": "validate",
+    "when_to_use": "當你已有設計稿、Prototype 或流程，並需要做設計品質、可用性或一致性檢查時",
+    "when_not_to_use": "當缺少設計稿、Prototype、測試資料或明確任務目標時",
+    "input_required": [
+      "設計稿"
+    ],
+    "output": [
+      "QA Report"
+    ],
+    "next_best_actions": [
+      "整理測試結果｜決定是否進入成效追蹤或設計修正"
+    ],
+    "file": "task_cards/cards/IT-A-003.md"
+  },
+  {
+    "prompt_id": "IT-A-004",
+    "task_name": "無障礙檢查",
+    "stage": "迭代測試",
+    "task_type": "validate",
+    "when_to_use": "當你已有設計稿、Prototype 或流程，並需要做設計品質、可用性或一致性檢查時",
+    "when_not_to_use": "當缺少設計稿、Prototype、測試資料或明確任務目標時",
+    "input_required": [
+      "畫面與 Prototype"
+    ],
+    "output": [
+      "Accessibility Report"
+    ],
+    "next_best_actions": [
+      "整理測試結果｜決定是否進入成效追蹤或設計修正"
+    ],
+    "file": "task_cards/cards/IT-A-004.md"
+  },
+  {
+    "prompt_id": "IT-A-005",
+    "task_name": "互動一致性檢查",
+    "stage": "迭代測試",
+    "task_type": "validate",
+    "when_to_use": "當你已有設計稿、Prototype 或流程，並需要做設計品質、可用性或一致性檢查時",
+    "when_not_to_use": "當缺少設計稿、Prototype、測試資料或明確任務目標時",
+    "input_required": [
+      "流程與畫面"
+    ],
+    "output": [
+      "Consistency Report"
+    ],
+    "next_best_actions": [
+      "整理測試結果｜決定是否進入成效追蹤或設計修正"
+    ],
+    "file": "task_cards/cards/IT-A-005.md"
+  },
+  {
+    "prompt_id": "IT-B-001",
+    "task_name": "任務成功率分析",
+    "stage": "迭代測試",
+    "task_type": "evaluate",
+    "when_to_use": "當你已有測試結果或改善前後資料，並需要評估體驗差異或任務表現時",
+    "when_not_to_use": "當缺少設計稿、Prototype、測試資料或明確任務目標時",
+    "input_required": [
+      "Testing Result"
+    ],
+    "output": [
+      "Success KPI"
+    ],
+    "next_best_actions": [
+      "整理測試結果｜決定是否進入成效追蹤或設計修正"
+    ],
+    "file": "task_cards/cards/IT-B-001.md"
+  },
+  {
+    "prompt_id": "IT-B-003",
+    "task_name": "改善前後比較",
+    "stage": "迭代測試",
+    "task_type": "evaluate",
+    "when_to_use": "當你已有測試結果或改善前後資料，並需要評估體驗差異或任務表現時",
+    "when_not_to_use": "當缺少設計稿、Prototype、測試資料或明確任務目標時",
+    "input_required": [
+      "KPI Data"
+    ],
+    "output": [
+      "Improvement Report"
+    ],
+    "next_best_actions": [
+      "整理測試結果｜決定是否進入成效追蹤或設計修正"
+    ],
+    "file": "task_cards/cards/IT-B-003.md"
+  },
+  {
+    "prompt_id": "IT-B-004",
+    "task_name": "流程清晰度評估",
+    "stage": "迭代測試",
+    "task_type": "evaluate",
+    "when_to_use": "當你已有測試結果或改善前後資料，並需要評估體驗差異或任務表現時",
+    "when_not_to_use": "當缺少設計稿、Prototype、測試資料或明確任務目標時",
+    "input_required": [
+      "Testing Data"
+    ],
+    "output": [
+      "Clarity Analysis"
+    ],
+    "next_best_actions": [
+      "整理測試結果｜決定是否進入成效追蹤或設計修正"
+    ],
+    "file": "task_cards/cards/IT-B-004.md"
+  },
+  {
+    "prompt_id": "PT-A-001",
+    "task_name": "完成率分析",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少KPI Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "KPI Data"
+    ],
+    "output": [
+      "Completion Report"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-A-001.md"
+  },
+  {
+    "prompt_id": "PT-A-002",
+    "task_name": "完成時間分析",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少KPI Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "KPI Data"
+    ],
+    "output": [
+      "Time Analysis"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-A-002.md"
+  },
+  {
+    "prompt_id": "PT-A-003",
+    "task_name": "跳出/猶豫點追蹤分析",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少Funnel Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "Funnel Data"
+    ],
+    "output": [
+      "Drop-off Insight"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-A-003.md"
+  },
+  {
+    "prompt_id": "PT-C-001",
+    "task_name": "轉換率影響分析",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少KPI 與 UX Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "KPI 與 UX Data"
+    ],
+    "output": [
+      "Conversion Report"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-C-001.md"
+  },
+  {
+    "prompt_id": "PT-C-002",
+    "task_name": "留存率影響評估",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少Retention Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "Retention Data"
+    ],
+    "output": [
+      "Retention Insight"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-C-002.md"
+  },
+  {
+    "prompt_id": "PT-C-003",
+    "task_name": "客服工單降低分析",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少CS Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "CS Data"
+    ],
+    "output": [
+      "Support Impact"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-C-003.md"
+  },
+  {
+    "prompt_id": "PT-C-005",
+    "task_name": "功能使用率分析",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少Product Analytics，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "Product Analytics"
+    ],
+    "output": [
+      "Usage Insight"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-C-005.md"
+  },
+  {
+    "prompt_id": "PT-D-001",
+    "task_name": "KPI Dashboard 摘要生成",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少Dashboard Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "Dashboard Data"
+    ],
+    "output": [
+      "KPI Summary"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-D-001.md"
+  },
+  {
+    "prompt_id": "PT-D-002",
+    "task_name": "改善前後報告生成",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少KPI Data，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "KPI Data"
+    ],
+    "output": [
+      "Improvement Report"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-D-002.md"
+  },
+  {
+    "prompt_id": "PT-D-004",
+    "task_name": "管理層報告生成",
+    "stage": "成效追蹤",
+    "task_type": "measure",
+    "when_to_use": "當你已有 KPI、產品分析或成效數據，並需要追蹤 UX 改動後的影響時",
+    "when_not_to_use": "當缺少KPI 與研究資料，或尚未有足夠研究證據 / KPI 可支撐商業推論時",
+    "input_required": [
+      "KPI 與研究資料"
+    ],
+    "output": [
+      "Executive Summary"
+    ],
+    "next_best_actions": [
+      "停下來進行人工檢查｜確認 KPI 解讀是否有足夠數據支持"
+    ],
+    "file": "task_cards/cards/PT-D-004.md"
+  },
+  {
+    "prompt_id": "RP-A-001",
+    "task_name": "AI Persona 建立",
+    "stage": "研究規劃與準備",
+    "task_type": "plan",
+    "when_to_use": "當你需要在研究啟動階段釐清「AI Persona 建立」，並把產品背景、功能描述、整理成可執行研究方向時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「AI Persona 建立」時",
+    "input_required": [
+      "產品背景",
+      "功能描述"
+    ],
+    "output": [
+      "目標用戶 Persona 文件"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-A-001.md"
+  },
+  {
+    "prompt_id": "RP-A-002",
+    "task_name": "使用者族群定義",
+    "stage": "研究規劃與準備",
+    "task_type": "plan",
+    "when_to_use": "當你需要在研究啟動階段釐清「使用者族群定義」，並把產品情境、商業目標整理成可執行研究方向時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「使用者族群定義」時",
+    "input_required": [
+      "產品情境",
+      "商業目標"
+    ],
+    "output": [
+      "使用者分群"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-A-002.md"
+  },
+  {
+    "prompt_id": "RP-A-003",
+    "task_name": "研究目標定義",
+    "stage": "研究規劃與準備",
+    "task_type": "plan",
+    "when_to_use": "當你需要在研究啟動階段釐清「研究目標定義」，並把產品問題、研究背景整理成可執行研究方向時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「研究目標定義」時",
+    "input_required": [
+      "Product Context",
+      "Business Problem",
+      "Research Need"
+    ],
+    "output": [
+      "研究目標文件"
+    ],
+    "next_best_actions": [
+      "RP-A-004｜研究假設撰寫"
+    ],
+    "file": "task_cards/cards/RP-A-003.md"
+  },
+  {
+    "prompt_id": "RP-A-004",
+    "task_name": "研究假設撰寫",
+    "stage": "研究規劃與準備",
+    "task_type": "plan",
+    "when_to_use": "當你需要在研究啟動階段釐清「研究假設撰寫」，並把商業問題、使用者問題整理成可執行研究方向時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「研究假設撰寫」時",
+    "input_required": [
+      "Research Goal",
+      "Business Problem",
+      "User Problem"
+    ],
+    "output": [
+      "研究假設列表"
+    ],
+    "next_best_actions": [
+      "RP-A-005｜研究問題生成"
+    ],
+    "file": "task_cards/cards/RP-A-004.md"
+  },
+  {
+    "prompt_id": "RP-A-005",
+    "task_name": "研究問題生成",
+    "stage": "研究規劃與準備",
+    "task_type": "plan",
+    "when_to_use": "當你需要在研究啟動階段釐清「研究問題生成」，並把研究目標、產品情境整理成可執行研究方向時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「研究問題生成」時",
+    "input_required": [
+      "Research Goal",
+      "Product Scenario"
+    ],
+    "output": [
+      "研究問題清單"
+    ],
+    "next_best_actions": [
+      "RP-B-001｜受訪者條件定義",
+      "RP-D-001｜訪談腳本撰寫"
+    ],
+    "file": "task_cards/cards/RP-A-005.md"
+  },
+  {
+    "prompt_id": "RP-B-001",
+    "task_name": "受訪者條件定義",
+    "stage": "研究規劃與準備",
+    "task_type": "recruit",
+    "when_to_use": "當你已具備研究目標，並需要規劃招募、篩選或分群受訪者以產出「受訪者招募條件」時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「受訪者條件定義」時",
+    "input_required": [
+      "Research Goal",
+      "Product Context",
+      "Target User"
+    ],
+    "output": [
+      "受訪者招募條件"
+    ],
+    "next_best_actions": [
+      "RP-B-002｜招募問卷生成"
+    ],
+    "file": "task_cards/cards/RP-B-001.md"
+  },
+  {
+    "prompt_id": "RP-B-002",
+    "task_name": "招募問卷生成",
+    "stage": "研究規劃與準備",
+    "task_type": "recruit",
+    "when_to_use": "當你已具備研究目標，並需要規劃招募、篩選或分群受訪者以產出「招募問卷 / Screener」時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「招募問卷生成」時",
+    "input_required": [
+      "Research Purpose",
+      "Target Segment",
+      "Participant Criteria"
+    ],
+    "output": [
+      "招募問卷 / Screener"
+    ],
+    "next_best_actions": [
+      "RP-D-001｜訪談腳本撰寫"
+    ],
+    "file": "task_cards/cards/RP-B-002.md"
+  },
+  {
+    "prompt_id": "RP-B-003",
+    "task_name": "受訪者分群",
+    "stage": "研究規劃與準備",
+    "task_type": "recruit",
+    "when_to_use": "當你已具備研究目標，並需要規劃招募、篩選或分群受訪者以產出「分群架構」時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「受訪者分群」時",
+    "input_required": [
+      "使用者特徵",
+      "行為資料"
+    ],
+    "output": [
+      "分群架構"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-B-003.md"
+  },
+  {
+    "prompt_id": "RP-B-004",
+    "task_name": "招募條件驗證",
+    "stage": "研究規劃與準備",
+    "task_type": "recruit",
+    "when_to_use": "當你已具備研究目標，並需要規劃招募、篩選或分群受訪者以產出「風險分析」時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「招募條件驗證」時",
+    "input_required": [
+      "招募條件",
+      "研究目標"
+    ],
+    "output": [
+      "風險分析"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-B-004.md"
+  },
+  {
+    "prompt_id": "RP-C-001",
+    "task_name": "競品分析",
+    "stage": "研究規劃與準備",
+    "task_type": "explore",
+    "when_to_use": "當你需要用競品、趨勢或 UX Pattern 輔助前期設計判斷，並產出「競品分析報告」時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「競品分析」時",
+    "input_required": [
+      "產品資訊",
+      "競品名單"
+    ],
+    "output": [
+      "競品分析報告"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-C-001.md"
+  },
+  {
+    "prompt_id": "RP-C-002",
+    "task_name": "功能比較",
+    "stage": "研究規劃與準備",
+    "task_type": "explore",
+    "when_to_use": "當你需要用競品、趨勢或 UX Pattern 輔助前期設計判斷，並產出「Feature Matrix」時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「功能比較」時",
+    "input_required": [
+      "功能清單",
+      "競品資訊"
+    ],
+    "output": [
+      "Feature Matrix"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-C-002.md"
+  },
+  {
+    "prompt_id": "RP-C-003",
+    "task_name": "UX Pattern 研究",
+    "stage": "研究規劃與準備",
+    "task_type": "explore",
+    "when_to_use": "當你需要用競品、趨勢或 UX Pattern 輔助前期設計判斷，並產出「UX Pattern 整理」時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「UX Pattern 研究」時",
+    "input_required": [
+      "產品類型",
+      "使用情境"
+    ],
+    "output": [
+      "UX Pattern 整理"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-C-003.md"
+  },
+  {
+    "prompt_id": "RP-C-004",
+    "task_name": "趨勢分析",
+    "stage": "研究規劃與準備",
+    "task_type": "explore",
+    "when_to_use": "當你需要用競品、趨勢或 UX Pattern 輔助前期設計判斷，並產出「趨勢洞察」時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「趨勢分析」時",
+    "input_required": [
+      "市場資訊",
+      "產品方向"
+    ],
+    "output": [
+      "趨勢洞察"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-C-004.md"
+  },
+  {
+    "prompt_id": "RP-D-001",
+    "task_name": "訪談腳本撰寫",
+    "stage": "研究規劃與準備",
+    "task_type": "plan",
+    "when_to_use": "當你需要把研究目標、研究問題或專案限制轉成可執行的研究計畫或訪談腳本時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「訪談腳本撰寫」時",
+    "input_required": [
+      "Research Goal",
+      "Product Scenario",
+      "Research Questions"
+    ],
+    "output": [
+      "使用者訪談腳本"
+    ],
+    "next_best_actions": [
+      "DC-A-001｜延伸追問生成",
+      "DC-A-002｜深入探詢問題建議",
+      "DC-A-003｜對話摘要整理"
+    ],
+    "file": "task_cards/cards/RP-D-001.md"
+  },
+  {
+    "prompt_id": "RP-D-004",
+    "task_name": "研究時程規劃",
+    "stage": "研究規劃與準備",
+    "task_type": "plan",
+    "when_to_use": "當你需要把研究目標、研究問題或專案限制轉成可執行的研究計畫或訪談腳本時",
+    "when_not_to_use": "當產品背景、研究目的或決策問題尚不清楚，無法定義「研究時程規劃」時",
+    "input_required": [
+      "專案時程",
+      "研究範圍"
+    ],
+    "output": [
+      "研究時程"
+    ],
+    "next_best_actions": [
+      "檢查研究目標與輸入資料是否足夠｜決定下一個研究規劃或招募任務"
+    ],
+    "file": "task_cards/cards/RP-D-004.md"
+  }
+]
