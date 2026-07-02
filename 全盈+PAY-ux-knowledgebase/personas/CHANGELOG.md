@@ -14,6 +14,14 @@
 
 ---
 
+## [2026-07-02] - 全盈UX研究
+
+### Added
+- `p002-越南產業移工.md`：依 r2026-07-001 桌面研究建立的 Provisional Persona（工廠作業員、仲介債、金融數位不熟），狀態 draft
+- `p003-印尼家庭看護.md`：Provisional Persona（語言障礙最重、難臨櫃、詐騙戒心極高），狀態 draft
+- `p004-菲律賓移工.md`：Provisional Persona（英語佳、數位能力高、口碑節點、對費用敏感），狀態 draft
+- 備註：三份皆為桌面研究推論，未經一手訪談驗證；一手研究後應升 validated
+
 ## [2025-05-25] - 設計師-Amy（這只是範例）
 
 ### Added

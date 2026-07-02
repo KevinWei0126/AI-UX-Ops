@@ -7,6 +7,21 @@
 
 ---
 
+## [2026-07-02] - 全盈UX研究
+
+### Added
+- 新增標籤 3 個：`credit-loan`（流程類）、`migrant-worker`（使用者類）、`multilingual`（設計類），以支援移工信用貸款專案
+- 新專案「移工信用貸款」進入知識庫：product-context 2 份、research-insights 1 份、personas 3 份（詳見各資料夾 CHANGELOG）
+
+### Changed
+- (無)
+
+### Deprecated
+- (無)
+
+### Removed
+- (無)
+
 ## [2025-05-25] - 設計團隊
 
 ### Added（這只是範例）
