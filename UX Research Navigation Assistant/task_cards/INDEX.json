@@ -434,6 +434,26 @@
     "file": "task_cards/cards/DO-C-006.md"
   },
   {
+    "prompt_id": "DO-D-001",
+    "task_name": "HMW 問題生成",
+    "stage": "產出物製作",
+    "task_type": "synthesize",
+    "when_to_use": "當你已有研究洞察、關鍵發現或 Persona，並需要將其轉為「How Might We 設計問題」以定義設計方向、銜接後續發想時",
+    "when_not_to_use": "當研究洞察或 Persona 尚未成形、痛點仍不清楚，無法收斂出有意義的設計問題時",
+    "input_required": [
+      "Insight Data",
+      "Persona"
+    ],
+    "output": [
+      "HMW 問題集 / How Might We 問題"
+    ],
+    "next_best_actions": [
+      "DO-B-001｜User Flow 生成",
+      "DO-C-002｜商業價值轉譯"
+    ],
+    "file": "task_cards/cards/DO-D-001.md"
+  },
+  {
     "prompt_id": "IT-A-001",
     "task_name": "啟發式評估",
     "stage": "迭代測試",
