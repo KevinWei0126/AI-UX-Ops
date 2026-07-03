@@ -454,6 +454,46 @@
     "file": "task_cards/cards/DO-D-001.md"
   },
   {
+    "prompt_id": "DO-E-001",
+    "task_name": "設計發想",
+    "stage": "產出物製作",
+    "task_type": "ideate",
+    "when_to_use": "當你已有 HMW 設計問題、洞察或 Persona，需要擴散發想出多個設計概念時",
+    "when_not_to_use": "當設計問題（HMW）尚未定義清楚、或發想目標不聚焦，無法產出有意義概念時",
+    "input_required": [
+      "HMW",
+      "Persona"
+    ],
+    "output": [
+      "設計概念清單 / Concept List"
+    ],
+    "next_best_actions": [
+      "DO-E-002｜設計方案收斂",
+      "DO-B-001｜User Flow 生成"
+    ],
+    "file": "task_cards/cards/DO-E-001.md"
+  },
+  {
+    "prompt_id": "DO-E-002",
+    "task_name": "設計方案收斂",
+    "stage": "產出物製作",
+    "task_type": "synthesize",
+    "when_to_use": "當你已有多個設計概念，需要評估、比較並收斂出候選方案時",
+    "when_not_to_use": "當概念數量不足、或評估準則與商業目標尚未釐清時",
+    "input_required": [
+      "設計概念清單",
+      "商業目標"
+    ],
+    "output": [
+      "收斂後方案 / 方案評估表"
+    ],
+    "next_best_actions": [
+      "DO-B-001｜User Flow 生成",
+      "DO-C-002｜商業價值轉譯"
+    ],
+    "file": "task_cards/cards/DO-E-002.md"
+  },
+  {
     "prompt_id": "IT-A-001",
     "task_name": "啟發式評估",
     "stage": "迭代測試",
