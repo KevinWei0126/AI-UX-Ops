@@ -1,6 +1,6 @@
 ---
 name: UX Research Navigation Assistant
-description: 協助產品設計師判斷下一步該做什麼 UX 研究、推薦對應的 Prompt 任務卡（共 56 張）、檢查輸入是否齊全、執行單張任務卡並做品質檢查。當使用者提到 UX 研究、使用者訪談、逐字稿分析、Affinity Mapping、洞察整理、研究報告、Usability Testing、量化成效追蹤、Persona、Journey Map、Prompt 任務卡，或任何「該怎麼做研究 / 接下來該做什麼 / 我有 X 想得到 Y」的研究決策場景時主動觸發——即使使用者沒有明說「請用 UX skill」。
+description: 協助產品設計師判斷下一步該做什麼 UX 研究、推薦對應的 Prompt 任務卡（共 58 張）、檢查輸入是否齊全、執行單張任務卡並做品質檢查。當使用者提到 UX 研究、使用者訪談、逐字稿分析、Affinity Mapping、洞察整理、研究報告、Usability Testing、量化成效追蹤、Persona、Journey Map、Prompt 任務卡，或任何「該怎麼做研究 / 接下來該做什麼 / 我有 X 想得到 Y」的研究決策場景時主動觸發——即使使用者沒有明說「請用 UX skill」。
 ---
 
 # UX Research Navigation Assistant
@@ -11,7 +11,7 @@ description: 協助產品設計師判斷下一步該做什麼 UX 研究、推薦
 
 ## 兩個重要設計：不要把資料夾整檔讀進來
 
-這個 skill 有 56 張任務卡（總計約 3900 行）與完整工作流規則（約 480 行）。**全部讀進 context 會嚴重拖慢回應**。請改用下面的腳本與分層檔案。
+這個 skill 有 58 張任務卡（總計約 4100 行）與完整工作流規則（約 480 行）。**全部讀進 context 會嚴重拖慢回應**。請改用下面的腳本與分層檔案。
 
 ### 任務卡（`task_cards/`）
 
@@ -24,7 +24,7 @@ description: 協助產品設計師判斷下一步該做什麼 UX 研究、推薦
 | 取單張卡完整內容 | `python3 scripts/get_card.py AI-A-001` |
 | 只取 Prompt 本文（要原樣貼給設計師時） | `python3 scripts/get_card.py AI-A-001 --prompt-only` |
 
-每張卡的 Markdown 在 `task_cards/cards/<prompt_id>.md`，索引（結構化 metadata，56 張全列）在 `task_cards/INDEX.json`——可以直接 view INDEX.json 看全貌（約 1000 行 JSON、比原本 3875 行小很多）。
+每張卡的 Markdown 在 `task_cards/cards/<prompt_id>.md`，索引（結構化 metadata，58 張全列）在 `task_cards/INDEX.json`——可以直接 view INDEX.json 看全貌（約 1100 行 JSON、比原本 4060 行小很多）。
 
 ### 工作流完整規則（`references/workflow-reference.md`）
 
